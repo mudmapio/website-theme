@@ -36,5 +36,6 @@
   {{ if .Site.Params.GoogleAnalyticsGtag }}
   {{ partial "analytics-gtag.html" . }}
   {{ end }}
+  {{ partial "plausible_head.html" . }}
 
 </head>
