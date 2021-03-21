@@ -64,8 +64,8 @@
         
         {{ if site.Params.backend_redirect.enable }}
         {{ with site.Params.backend_redirect }}
-        <a href="{{ .link_login }}" class="btn btn-sm btn-primary ml-3">{{ .label_login }}</a>
-        <a href="{{ .link_register }}" class="btn btn-sm btn-primary ml-3">{{ .label_register }}</a>
+        <a href="{{ .link_login | relURL }}" class="btn btn-sm btn-primary ml-3">{{ .label_login }}</a>
+        <a href="{{ .link_register | relURL }}" class="btn btn-sm btn-primary ml-3">{{ .label_register }}</a>
           {{ end }}
           {{ end }}
         
